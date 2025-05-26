@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aviation Notes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+  const searchInput = document.getElementById('search');
+  const items = document.querySelectorAll('ul li');
+
+  searchInput.addEventListener('input', () => {
+    const value = searchInput.value.toLowerCase();
+    items.forEach(li => {
+      const text = li.textContent.toLowerCase();
+      li.style.display = text.includes(value) ? '' : 'none';
+    });
+  });
+</script>
+
+<body>
+  <header>
+    <h1>✈️ Shreddies Aviation Notes </h1>
+    <p>Organized reference for all my aviation studies</p>
+    <button id="theme-toggle"> Dark Mode </button>
+
+  </header>
+
+  <main>
+    <h2>Subjects</h2>
+    <input type="text" id="search" placeholder="Search notes...">
+
+    <ul>
+      <ul>
+        <ul>
+          <li><a href="pdfs/IFR Charts.pdf" target="_blank"> IFR Charts</a></li>
+          <li><a href="pdfs/Icing.pdf" target="_blank"> Icing</a></li>
+          <li><a href="pdfs/Garmin G1000-1.pdf" target="_blank"> Garmin G1000</a></li>
+          <li><a href="pdfs/Online Links and FAR-AIM references.pdf" target="_blank"> Online Links & FAR-AIM</a></li>
+          <li><a href="pdfs/IFR Altitudes.pdf" target="_blank"> IFR Altitudes</a></li>
+          <li><a href="pdfs/VORS.pdf" target="_blank"> VORs</a></li>
+          <li><a href="pdfs/Airports and Navaids.pdf" target="_blank"> Airports and Navaids</a></li>
+          <li><a href="pdfs/GPS.pdf" target="_blank"> GPS</a></li>
+          <li><a href="pdfs/Required Navigation Performance.pdf" target="_blank"> Required Navigation Performance</a></li>
+          <li><a href="pdfs/Wide Area Augmentation System (WAAS).pdf" target="_blank"> WAAS</a></li>
+          <li><a href="pdfs/Satellite Based Augmentation Systems (SBAS).pdf" target="_blank"> SBAS</a></li>
+          <li><a href="pdfs/Navigation Systems.pdf" target="_blank"> Navigation Systems</a></li>
+          <li><a href="pdfs/IFR Alternate Planning.pdf" target="_blank"> IFR Alternate Planning</a></li>
+          <li><a href="pdfs/Approach Types.pdf" target="_blank"> Approach Types</a></li>
+          <li><a href="pdfs/Briefing An approach chart.pdf" target="_blank"> Briefing an Approach Chart</a></li>
+          <li><a href="pdfs/Weather Theory and Products.pdf" target="_blank"> Weather Theory and Products</a></li>
+          <li><a href="pdfs/Kevin IFR Weather Ground School.pdf" target="_blank"> Kevin's IFR Weather Ground School</a></li>
+          <li><a href="pdfs/91.175 Take Off and Landing Under IFR.pdf" target="_blank"> 91.175 Takeoff & Landing Under IFR</a></li>
+          <li><a href="pdfs/Spatial Disorientation and Illusions.pdf" target="_blank"> Spatial Disorientation & Illusions</a></li>
+          <li><a href="pdfs/Terminal Procedures.pdf" target="_blank"> Terminal Procedures</a></li>
+          <li><a href="pdfs/Required Reports Under IFR.pdf" target="_blank"> Required Reports Under IFR</a></li>
+        </ul>
+        
+      
+    </ul>
+  </main>
+</main>
+<script src="js/theme.js" defer></script>
+</body>
+</html>
+
+</body>
+</html>
+<script src="js/theme.js" defer></script>
